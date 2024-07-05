@@ -1,0 +1,165 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* navbar style start  */
+
+.main-nav {
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: grid;
+  grid-template-columns: 9% 15% 43% 24% 9%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-link ul {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-link ul li {
+  font-size: 20px;
+}
+
+.menu-link {
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.social-media button {
+  padding: 5px 12px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.mobile-menu-link {
+  display: none;
+
+}
+
+
+/* Responsiveness */
+@media (max-width:780px) {
+  .main-nav {
+    grid-template-columns: 12% 30% 46% 12%;
+  }
+
+  .menu-link {
+    display: none;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+  }
+
+  .hamburger-menu {
+    display: inline;
+  }
+
+  .mobile-menu-link {
+    display: inline;
+    position: fixed;
+    height: 50px;
+    top: 85px;
+    width: 80%;
+    z-index: 999;
+    background-color: rgb(255, 251, 251);
+   
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .mobile-menu-link ul {
+    width: 100%;
+    margin: 0%;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .mobile-menu-link ul li {
+    padding: 0px 5px;
+    font-size: 20px;
+    font-weight:400;
+  }
+  
+}
+
+@media (max-width:480px) {
+  .main-nav {
+    grid-template-columns: 1% 28% 66% 1%;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+  }
+  .mobile-menu-link 
+  {
+    width: 85%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+  .mobile-menu-link ul {
+    width: 90%;
+    height: 100%;
+    margin: 0%;
+    display: flex;
+    padding: 10px;
+    align-items:center;
+    justify-content: space-between;
+  }
+  .mobile-menu-link ul li {
+    padding: 0px 2px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+@media (max-width:360px) {
+  .main-nav {
+    grid-template-columns: 1% 20% 78% 1%;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+  }
+}

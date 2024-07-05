@@ -1,0 +1,51 @@
+.footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    width: 90%; /* Set width to 90% */
+    max-width: 1200px; /* Optional: Set maximum width if needed */
+    margin: 0 auto; /* Center align horizontally */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .footer-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .company-info,
+  .links-section,
+  .contact-info {
+    flex: 1 1 100%; /* Flex basis to take up full width initially */
+    margin: 0 10px;
+  }
+  
+  .links-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .links-section li {
+    margin-bottom: 5px;
+  }
+  
+  .links-section a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .footer-divider {
+    margin: 20px 0;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: #666;
+  }
+  
+@media (min-width:768px)
+{
+    
+}

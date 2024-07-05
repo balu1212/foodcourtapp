@@ -1,0 +1,145 @@
+.Menupage
+{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.Menupage h2{
+    text-shadow: 0px 0px 10px rgb(209, 207, 207);
+}
+.MenuBox
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    overflow-x: scroll;
+    padding:  30px;
+    box-shadow: inset 0px 0px 10px rgb(241, 241, 241);
+}
+.MenuBox::-webkit-scrollbar
+{
+    display: none;
+}
+.MenuCard
+{
+    cursor: pointer;
+}
+.Imgactive
+{
+    border: 2px solid tomato;
+    border-radius: 50%;
+}
+
+.line
+{
+    width: 82%;
+    height: 3px;
+    color: rgb(221, 221, 236);
+    background-color:whitesmoke;
+}
+
+/* Food Display css */
+.food-display-list
+{
+    width: 90%;
+    padding: 0px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    row-gap: 50px;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.food-item
+{
+    width: 100%;
+    margin:auto ;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #00000015;
+}
+
+.food-item-image
+{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.food-item-info
+{
+    padding: 20px;
+    text-align: start;
+}
+
+.food-item-name-rating
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.food-item-name-rating p
+{
+    font-size: 18px;
+    font-weight: 500;
+}
+.food-item-name-rating img
+{
+    width: 80px;
+}
+.food-item-desc
+{
+    color: #676767;
+    font-size: 12px;
+}
+.food-item-price
+{
+    color: tomato;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px 0px;
+}
+.food-item-image-container
+{
+    position: relative;
+}
+.food-item-image-container .add
+{
+    position: absolute;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.food-item-counter
+{
+    position: absolute;
+    bottom: 15px;
+    right: 15px; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+.food-item-counter img
+{
+   width: 30px;
+    margin: 4px;
+}
+
+@media (max-width:500px)
+{
+    .MenuBox
+    {
+        height: 150px;
+        padding: 10px;
+        width: 90%;
+    }
+}

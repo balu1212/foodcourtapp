@@ -1,0 +1,21 @@
+.OurSpeciality
+{
+    width: 90%;
+    padding: 15px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minMax(250px,1fr));
+    justify-items: center;
+    box-shadow: 0px 0px 5px grey;
+    
+}
+
+.OurSpeciality img
+{
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px 0px;
+    border-radius: 15px;
+   
+    
+}
