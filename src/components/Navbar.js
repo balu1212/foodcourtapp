@@ -59,7 +59,7 @@ const Navbar = ({setPopUp}) =>{
                       <div className='menu-link'>
                         <ul>
                             <li>
-                                <NavLink to="/Food-Court">Home</NavLink>
+                                <NavLink to="/">Home</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/about">about</NavLink>
@@ -94,7 +94,7 @@ const Navbar = ({setPopUp}) =>{
             {showMediaIcons&&<div className="mobile-menu-link">
                         <ul>
                             <li>
-                                <NavLink to="/Food-Court">Home</NavLink>
+                                <NavLink to="/">Home</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/about">about</NavLink>
