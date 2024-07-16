@@ -19,14 +19,14 @@ function App() {
     <div className="App">
       <Navbar setPopUp={setPopUp}/>
        <Routes>
-        <Route path='/' element={<Home/>}/>
+        <Route exact path="/" element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/menu' element={<Menu/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path="/cart" element={<Cartpage/>}/>
         <Route path='/order' element={<Order/>}/>
        </Routes>
-       <Home/>
+       
     </div>
     </BrowserRouter>
     </StoreContextProvider>
