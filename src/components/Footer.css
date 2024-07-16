@@ -1,32 +1,51 @@
 .footer {
-    background-color: #f0f0f0;
+    background-color: black;
+    color: #e2e2e2;
     padding: 20px;
-    text-align: center;
-    width: 90%; /* Set width to 90% */
+    width: 89%; /* Set width to 90% */
     max-width: 1200px; /* Optional: Set maximum width if needed */
     margin: 0 auto; /* Center align horizontally */
     box-sizing: border-box; /* Include padding in width calculation */
+    border-radius: 15px 15px 0px 0px;
   }
   
   .footer-section {
+    padding-left: 10%;
+    width: 80%;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    justify-content: space-around;
+    flex-direction: column; /* Allow items to wrap on smaller screens */
+    justify-content: center;
     margin-bottom: 20px;
   }
   
-  .company-info,
+  .logo
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+   .company-info,
   .links-section,
   .contact-info {
-    flex: 1 1 100%; /* Flex basis to take up full width initially */
-    margin: 0 10px;
+   
+    margin: 10px 10px;
   }
+
   
+  /* .links-section ul {
+    width: 100%;
+    margin: 2%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: flex-start;
+  } */
+
   .links-section ul {
-    list-style-type: none;
-    padding: 0;
+    padding: 0%;
+    margin: 0%;
   }
-  
   .links-section li {
     margin-bottom: 5px;
   }
@@ -42,10 +61,50 @@
   
   .copyright {
     font-size: 14px;
-    color: #666;
+    color: white;
+    font-weight: 500;
+    text-align: center;
   }
   
 @media (min-width:768px)
 {
-    
+    .footer-section
+    {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: space-around;
+    }
+    .company-info
+    {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .logo
+    {
+      width: 80%;
+    }
+    .company-info p
+     {
+      width: 80%;
+     }
+    .contact-info
+    {
+      width: 35%;
+    }
+    .links-section
+    {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .links-section ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
 }

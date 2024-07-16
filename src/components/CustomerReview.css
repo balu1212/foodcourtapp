@@ -1,0 +1,165 @@
+.customer-review
+{
+    margin-bottom: 50px;
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.customer-photo
+{
+    position: relative;
+    width: 38%;
+    background-color: orange;
+    border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customer-photo img
+{
+    margin: -5px;
+    width: 90%;
+    border-radius: 50%;
+}
+.customerBox
+{
+    position: absolute;
+    width: 200px;
+    height: 80px;
+    bottom: 5%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+}
+.customerBox img
+{
+    color: white;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.customerBox p
+{
+    color: white;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reveiws
+{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.reveiws h4{
+    margin: 0%;
+    margin-top: 15px;
+    color: orange;
+}
+
+/* Customers Reveiews css */
+.review
+{
+    width: 80%;
+    margin-top: 15px;
+    display: flex;
+    gap: 30px;
+    overflow-x: scroll;
+}
+.review::-webkit-scrollbar {
+    display: none;
+}
+.Customer
+{
+    width: 100%;
+    display: flex;
+}
+.customerimg
+{
+    width:40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.customerimg img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.AboutCustomer
+{
+    padding-left: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+.AboutCustomer h4
+{
+    margin: 0%;
+}
+.Customerrating
+{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:720px)
+{
+    .customer-review
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .customer-photo
+    {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .customerBox
+    {
+         width: 100px;
+         height: 50px;
+         bottom: -1%;
+    }
+    .customerBox img {
+        width: 30px;
+        height: 30px;
+    }
+    .customerBox p {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .reveiws
+    {
+        width: 90%;
+    }
+    .review{
+        width: 100%;
+    }
+
+    .Customer
+    {
+       width: 100%;
+       font-size: 12px;
+    }
+}

@@ -123,8 +123,19 @@
     .cart-promocode {
         justify-content: start;
     }
+    
     .cart-total
     {
         width: 100%;
+    }
+}
+@media (max-width:340px)
+{
+    .cart-promocode {
+       width: 90%;
+    }
+    .cart-promocode div {
+        width: 100%;
+    
     }
 }

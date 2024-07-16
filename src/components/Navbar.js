@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-// import ShoppingBagRoundedIcon from '@mui/icons-material/ShoppingBagRounded';
-// import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
 import React, { useContext } from 'react';
 import './Navbar.css'
 import { StoreContext } from '../utilities/StoreContex';
@@ -41,7 +39,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from "react-router-dom";
 
 const Navbar = ({setPopUp}) =>{
-    const {cart}=useContext(StoreContext);
+    const {cart,toggle}=useContext(StoreContext);
     const [showMediaIcons, setShowMediaIcons] = useState(false);
     return (
         <>
@@ -49,24 +47,25 @@ const Navbar = ({setPopUp}) =>{
                 {/* 1st logo part  */}
                 <div className="logo">
                     <h2>
-                        <span>F</span>ood
-                        <span>C</span>ourt
+                      <span className='logospan1'> Food</span>
+                        <span className='logospan2'> Court</span>
                     </h2>
                 </div>
                 {/* 2nd menu part  */}
                     {/* <div className={
                         showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
                       }> */}
+                      
                       <div className='menu-link'>
                         <ul>
                             <li>
-                                <NavLink to="/">Home</NavLink>
+                                <NavLink to="/Food-Court">Home</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/about">about</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/service">services</NavLink>
+                                <NavLink to="/menu">Menu</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/contact">contact</NavLink>
@@ -76,26 +75,32 @@ const Navbar = ({setPopUp}) =>{
                    
                 {/* 3rd social media links */}
                 <div className="social-media">
-                   <Link to="/cart"><img src={require("../assets/basket_icon.png")} alt="Logoimg..." /></Link> 
-                    <button onClick={()=>setPopUp(true)}>Sign In</button>
+                    {
+                        toggle &&<div className='cartIcon'>
+                        <Link to="/cart"><img src={require("../assets/basket_icon.png")} alt="Logoimg..."/></Link>
+                        <p className='cartNumber'>{Object.keys(cart).length===0?0:Object.values(cart).reduce((a,b)=>a+b)}</p>
+                       </div>
+                    }
+                   
+                    {!toggle&&<button onClick={()=>setPopUp(true)}>Sign In</button>}
                     {/*  Menu Icon start  */}
                     <div className="hamburger-menu">
                         <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
                             <MenuIcon fontSize='large' />
                         </a>
                     </div>
-                </div>
+                </div> 
             </nav>
             {showMediaIcons&&<div className="mobile-menu-link">
                         <ul>
                             <li>
-                                <NavLink to="/">Home</NavLink>
+                                <NavLink to="/Food-Court">Home</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/about">about</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/service">services</NavLink>
+                                <NavLink to="/menu">Menu</NavLink>
                             </li>
                             <li>
                                 <NavLink to="/contact">contact</NavLink>

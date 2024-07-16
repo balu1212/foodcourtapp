@@ -4,6 +4,7 @@ import { food_list } from "../assets/assets";
 export const StoreContext = createContext();
 const StoreContextProvider = (props) => {
     const [cart, setCart] = useState({});
+    const [toggle,setToggle]=useState(false);//It is used to show Cart icon in Menu Button and hide sign in Menu and Show in Home
     //Add items in cart
     const addToCart = (itemid) => {
         !cart[itemid] ? setCart((prev) => ({ ...prev, [itemid]: 1 })) : (setCart((prev) => ({ ...prev, [itemid]: prev[itemid] + 1 })))
@@ -42,7 +43,9 @@ const StoreContextProvider = (props) => {
         addToCart,
         removeFromCart,
         food_list,
-        getTotalAmount
+        getTotalAmount,
+        toggle,
+        setToggle,
     }
     // useEffect(() => {
     //     console.log(cart)

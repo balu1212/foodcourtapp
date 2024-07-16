@@ -89,15 +89,18 @@
 }
 .HomeImg
 {
-    width: 30%;
+    width: 45%;
     height: 100%;
-
+    border-radius: 50%;
+    background-color: orange;
 }
 .HomeImg img
 {
-    height: 100%;
-    width: 100%;
+    height: 98%;
+    width: 99%;
+    border-radius: 50%;
     object-fit: contain;
+    
 }
 .HomeContent
 {
@@ -125,14 +128,24 @@
 .HomeContent button
 {
     color:#747474;
-    color: white;
-    font-weight: 500;
+    color: black;
+    font-weight: 600;
     padding: 1vw 2.3vw;
     font-size: max(1vw,13px);
     border-radius: 10px;
-    background-color: rgb(8, 177, 8);
+    background-color: rgba(255,255 ,255, 0.2);
+    backdrop-filter: blur(10px);
     font-weight: 700;
     cursor: pointer;
+    transition: background-color 0.4s, color 0.2s; 
+}
+.HomeContent button:hover
+{
+    background-color:orange; /* Background color on hover */
+    color: white; /* Text color on hover */
+    transform: translateX(-3px); /* Optional: Floating effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+    border: red;
 }
 .FoodImages
 {
@@ -179,7 +192,7 @@
     }
     .HomeContent h1
     {
-        width: 80%;
+        width: 100%;
        font-size: 18px;
     }
     .HomeContent button
@@ -200,7 +213,7 @@
     .HomeContent h1
     {
        font-size: 55px;
-       width: 80%;
+       width: 100%;
     }
     .HomeContent p
     {
