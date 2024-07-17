@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <Navbar setPopUp={setPopUp}/>
        <Routes>
-        <Route exact path="/" element={<Home/>}/>
+        <Route exact path="/food-order" element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/menu' element={<Menu/>}/>
         <Route path='/contact' element={<Contact/>}/>
