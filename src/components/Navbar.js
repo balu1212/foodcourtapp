@@ -59,16 +59,16 @@ const Navbar = ({setPopUp}) =>{
                       <div className='menu-link'>
                         <ul>
                             <li>
-                                <NavLink to="/food-order">Home</NavLink>
+                                <NavLink to="/foodcourtapp">Home</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/about">about</NavLink>
+                                <NavLink to="/foodcourtapp/about">about</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/menu">Menu</NavLink>
+                                <NavLink to="/foodcourtapp/menu">Menu</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact">contact</NavLink>
+                                <NavLink to="/foodcourtapp/contact">contact</NavLink>
                             </li>
                         </ul>
                     </div>
@@ -77,7 +77,7 @@ const Navbar = ({setPopUp}) =>{
                 <div className="social-media">
                     {
                         toggle &&<div className='cartIcon'>
-                        <Link to="/cart"><img src={require("../assets/basket_icon.png")} alt="Logoimg..."/></Link>
+                        <Link to="/foodcourtapp/cart"><img src={require("../assets/basket_icon.png")} alt="Logoimg..."/></Link>
                         <p className='cartNumber'>{Object.keys(cart).length===0?0:Object.values(cart).reduce((a,b)=>a+b)}</p>
                        </div>
                     }
@@ -94,16 +94,16 @@ const Navbar = ({setPopUp}) =>{
             {showMediaIcons&&<div className="mobile-menu-link">
                         <ul>
                             <li>
-                                <NavLink to="/food-order">Home</NavLink>
+                                <NavLink to="/foodcourtapp">Home</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/about">about</NavLink>
+                                <NavLink to="/foodcourtapp/about">about</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/menu">Menu</NavLink>
+                                <NavLink to="/foodcourtapp/menu">Menu</NavLink>
                             </li>
                             <li>
-                                <NavLink to="/contact">contact</NavLink>
+                                <NavLink to="/foodcourtapp/contact">contact</NavLink>
                             </li>
                         </ul>
                </div>}

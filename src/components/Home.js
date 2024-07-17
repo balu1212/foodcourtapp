@@ -19,7 +19,7 @@ const Home = () => {
                 <div className="HomeContent" >
                     <h1 >"Delight in Every Bite, Order <span style={{ color: 'orange' }}>Day or Night."</span></h1>
                     <p>Order your tasty food from here and indulge in a delightful culinary experience! Explore our diverse menu crafted with passion and quality ingredients, ensuring every bite is a savory delight. Place your order now and savor the flavors that will satisfy your cravings. </p>
-                    <Link to="/menu"><button>Order Here</button></Link>
+                    <Link to="/foodcourtapp/menu"><button>Order Here</button></Link>
                 </div>
                 <div className="HomeImg" >
                     {/* <img src={assets.home_bg} alt="Home-Background img...." /> */}

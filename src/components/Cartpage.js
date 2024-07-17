@@ -58,7 +58,7 @@ useEffect(()=>
                             <b>${getTotalAmount()===0?0:getTotalAmount()+1}</b>
                         </div>
                     </div>
-                  <Link to="/order"> <button>PROCEED TO CHECKOUT</button></Link>
+                  <Link to="/foodcourtapp/order"> <button>PROCEED TO CHECKOUT</button></Link>
                 </div>
                 <div className="cart-promocode">
                     <div>
